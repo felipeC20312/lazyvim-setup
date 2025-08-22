@@ -7,7 +7,10 @@ return {
     opts = {
       flavor = "mocha",
       transparent_background = true,
-
+      float = {
+        transparent = true,
+        solid = false,
+      },
       color_overrides = {
         mocha = {
           -- Fundo
@@ -40,15 +43,14 @@ return {
           sky = "#89dceb",
 
           -- Substituindo rosas por laranjas
-          rosewater = "#fab387", -- tom mais claro de laranja
-          flamingo = "#f9b26b", -- laranja queimado
-          pink = "#f38e7d", -- coral suave
-          peach = "#fab387", -- laranja padrão
-          maroon = "#e78a4e", -- laranja profundo
-          mauve = "#dd835e", -- intermediário entre rosa e laranja
+          rosewater = "#fab387",
+          flamingo = "#f9b26b",
+          pink = "#f38e7d",
+          peach = "#fab387",
+          maroon = "#e78a4e",
+          mauve = "#dd835e",
         },
       },
-
       integrations = {
         aerial = true,
         alpha = true,
@@ -88,7 +90,6 @@ return {
         which_key = true,
       },
     },
-
     specs = {
       {
         "akinsho/bufferline.nvim",
