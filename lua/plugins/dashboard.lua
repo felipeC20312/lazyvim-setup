@@ -90,7 +90,15 @@ o888bood8P'    `V88V"V8P' `Y8bod8P' o888o o888o     .8'
         footer = function()
           local stats = require("lazy").stats()
           local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
-          return { "⚡ Neovim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms" }
+          return {
+            "⚡ Neovim loaded "
+              .. stats.loaded
+              .. "/"
+              .. stats.count
+              .. " plugins in "
+              .. ms
+              .. "ms",
+          }
         end,
       },
     }
