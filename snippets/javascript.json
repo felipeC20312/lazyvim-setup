@@ -1,0 +1,56 @@
+{
+  "getelementbyid": {
+    "prefix": "gbid",
+    "body": "document.getelementbyid('${1:id}').innerhtml =",
+    "description": "get element by id"
+  },
+  "getelementbyclassname": {
+    "prefix": "gbname",
+    "body": "document.getelementsbyclassname('${1:class}').innerhtml =",
+    "description": "get element by class"
+  },
+  "clg": {
+    "prefix": "clg",
+    "body": "console.log(${1:text})"
+  },
+  "cle": {
+    "prefix": "cle",
+    "body": "console.error(${1:text})"
+  },
+  "cli": {
+    "prefix": "cli",
+    "body": "console.info(${1:text})"
+  },
+  "clw": {
+    "prefix": "clw",
+    "body": "console.warn(${1:text})"
+  },
+  "conp": {
+    "prefix": "conp",
+    "body": [
+      "const ${1:name} = ($2) => {",
+      "  return (",
+      "    <div>${1:name}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:name};"
+    ],
+    "description": "react functional component"
+  },
+  "conpcss": {
+    "prefix": "conpcss",
+    "body": [
+      "import styles from './${tm_filename_base}.module.css';",
+      "",
+      "const ${1:name} = ($2) => {",
+      "  return (",
+      "    <div>${1:name}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:name};"
+    ],
+    "description": "react functional component with css module"
+  }
+}

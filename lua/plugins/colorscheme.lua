@@ -14,9 +14,15 @@ return {
       color_overrides = {
         mocha = {
           -- Fundo
+<<<<<<< Updated upstream
           base = "#2B2D32",
           mantle = "#26282D",
           crust = "#1F2125",
+=======
+          base = "#2A2D33",
+          mantle = "#25282D",
+          crust = "#1E2125",
+>>>>>>> Stashed changes
 
           -- Texto
           text = "#cdd6f4",

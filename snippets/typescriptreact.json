@@ -1,0 +1,55 @@
+{
+  "conp": {
+    "prefix": "conp",
+    "body": [
+      "const ${1:name} = ($2) => {",
+      "  return (",
+      "    <div>${1:name}</div>",
+      "  )",
+      "}",
+
+      "export default ${1:name};"
+    ],
+    "description": "description for conp"
+  },
+  "conpfun": {
+    "prefix": "conpfun",
+    "body": [
+      "export default function ${1:name}($2){",
+      "  return (",
+      "    <div>${1:name}</div>",
+      "  )",
+      "}"
+    ],
+    "description": "description for conpfun"
+  },
+  "conpcss": {
+    "prefix": "conpcss",
+    "body": [
+      "import styles from './${TM_FILENAME_BASE}.module.css';",
+      "const ${1:name} = ($2) => {",
+      "  return (",
+      "    <div>${1:name}</div>",
+      "  )",
+      "}",
+      "export default ${1:name};"
+    ],
+    "description": "description for conpcss"
+  },
+  "clg": {
+    "prefix": "clg",
+    "body": "console.log(${1:text})"
+  },
+  "cle": {
+    "prefix": "cle",
+    "body": "console.error(${1:text})"
+  },
+  "cli": {
+    "prefix": "cli",
+    "body": "console.info(${1:text})"
+  },
+  "clw": {
+    "prefix": "clw",
+    "body": "console.warn(${1:text})"
+  }
+}
