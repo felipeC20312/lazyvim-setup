@@ -14,15 +14,9 @@ return {
       color_overrides = {
         mocha = {
           -- Fundo
-<<<<<<< Updated upstream
           base = "#2B2D32",
           mantle = "#26282D",
           crust = "#1F2125",
-=======
-          base = "#2A2D33",
-          mantle = "#25282D",
-          crust = "#1E2125",
->>>>>>> Stashed changes
 
           -- Texto
           text = "#cdd6f4",
@@ -32,7 +26,7 @@ return {
           -- Superfícies
           surface2 = "#585b70",
           surface1 = "#45475a",
-          surface0 = "#313244",
+          surface0 = "#45475a",
 
           -- Overlay
           overlay2 = "#9399b2",
@@ -40,10 +34,10 @@ return {
           overlay0 = "#6c7086",
 
           -- Tons principais
-          red = "#f38ba8",
+          red = "#f38b8b",
           green = "#a6e3a1",
           yellow = "#f9e2af",
-          blue = "#89b4fa",
+          blue = "#89bafa",
           magenta = "#cba6f7",
           teal = "#94e2d5",
           sky = "#89dceb",
@@ -68,7 +62,11 @@ return {
         gitsigns = true,
         headlines = true,
         illuminate = true,
-        indent_blankline = { enabled = true },
+        indent_blankline = {
+          enabled = true,
+          scope_color = "surface1",
+          colored_indent_levels = false,
+        },
         leap = true,
         lsp_trouble = true,
         mason = true,
