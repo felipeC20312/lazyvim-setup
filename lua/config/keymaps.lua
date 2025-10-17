@@ -1,3 +1,3 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
+-- === GPT Keymaps === --
+-- vim.keymap.set("n", "<leader>cg", ":ChatGPT<CR>", { desc = "Abrir ChatGPT" })
+-- vim.keymap.set("v", "<leader>ce", ":ChatGPTEditWithInstruction<CR>", { desc = "Editar seleção com GPT" })

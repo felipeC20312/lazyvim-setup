@@ -94,17 +94,17 @@ return {
         which_key = true,
       },
     },
-    specs = {
-      {
-        "akinsho/bufferline.nvim",
-        init = function()
-          local bufline = require("catppuccin.groups.integrations.bufferline")
-          function bufline.get()
-            return bufline.get_theme()
-          end
-        end,
-      },
-    },
+    -- specs = {
+    --   {
+    --     "akinsho/bufferline.nvim",
+    --     init = function()
+    --       local bufline = require("catppuccin.groups.integrations.bufferline")
+    --       function bufline.get()
+    --         return bufline.get_theme()
+    --       end
+    --     end,
+    --   },
+    -- },
   },
 
   -- Tokyonight
