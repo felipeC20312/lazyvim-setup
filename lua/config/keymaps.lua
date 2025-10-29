@@ -1,3 +1,1 @@
--- === GPT Keymaps === --
--- vim.keymap.set("n", "<leader>cg", ":ChatGPT<CR>", { desc = "Abrir ChatGPT" })
--- vim.keymap.set("v", "<leader>ce", ":ChatGPTEditWithInstruction<CR>", { desc = "Editar seleção com GPT" })
+
