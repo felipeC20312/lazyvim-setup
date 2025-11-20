@@ -50,5 +50,22 @@
       "export default ${1:name};"
     ],
     "description": "react functional component with css module"
+  },
+  "hook": {
+    "prefix": "usehook",
+    "body": [
+      "import { useState } from \"react\";",
+      "",
+      "export function use${1:Algo}() {",
+      "  const [${2:valor}, ${3:setValor}] = useState(${4:0});",
+      "",
+      "  const ${5:fazerAlgo} = () => {",
+      "    ${3:setValor}((v) => v + 1);",
+      "  };",
+      "",
+      "  return { ${2:valor}, ${5:fazerAlgo} };",
+      "}"
+    ],
+    "description": "Custom React Hook boilerplate"
   }
 }
