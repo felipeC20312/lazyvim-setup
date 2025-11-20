@@ -2,13 +2,11 @@
   "conp": {
     "prefix": "conp",
     "body": [
-      "const ${1:name} = ($2) => {",
+      "export const ${1:name} = ($2) => {",
       "  return (",
       "    <div>${1:name}</div>",
       "  )",
-      "}",
-
-      "export default ${1:name};"
+      "}"
     ],
     "description": "description for conp"
   },
