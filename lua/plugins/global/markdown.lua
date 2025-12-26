@@ -11,6 +11,7 @@ return {
       heading = {
         enabled = true,
         render_modes = false,
+        position = "inline",
         sign = true,
         icons = { "󰲠 ", "󰲢 ", "󰲤 ", "󰲦 ", "󰲨 ", "󰲪 " },
         signs = { "" },
