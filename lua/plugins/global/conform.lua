@@ -10,6 +10,9 @@ return {
       css = { "prettierd", "prettier" },
       html = { "prettierd", "prettier" },
       scss = { "prettierd", "prettier" },
+      angular = { "prettierd", "prettier" },
+      htmlangular = { "prettierd", "prettier" },
+      kotlin = { "ktlint" },
     },
     formatters = {
       prettier = {

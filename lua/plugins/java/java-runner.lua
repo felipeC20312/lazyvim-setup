@@ -675,7 +675,7 @@ return {
         "jdtls",
         "java-debug-adapter",
         "java-test",
-        "kotlin-language-server",
+        "kotlin-lsp",
       })
     end,
   },
