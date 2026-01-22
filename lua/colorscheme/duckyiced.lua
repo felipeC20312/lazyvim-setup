@@ -4,7 +4,7 @@ return {
   crust = "#1F2125",
 
   red = "#EE85A3",
-  green = "#89DA8E",
+  green = "#BFDA89",
   yellow = "#F1D1A6",
   blue = "#8983F4",
   magenta = "#9D9DF1",
