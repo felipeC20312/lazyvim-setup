@@ -1,8 +1,11 @@
+local duckyiced = require("colorscheme.duckyiced")
+local duckysummer = require("colorscheme.duckysummer")
+
 return {
   -- Catppuccin
   {
     "catppuccin/nvim",
-    lazy = true,
+    lazy = false,
     name = "catppuccin",
     opts = {
       flavor = "mocha",
@@ -12,44 +15,7 @@ return {
         solid = false,
       },
       color_overrides = {
-        mocha = {
-          -- Fundo
-          base = "#2B2D32",
-          mantle = "#26282D",
-          crust = "#1F2125",
-
-          -- Texto
-          text = "#cdd6f4",
-          subtext1 = "#bac2de",
-          subtext0 = "#a6adc8",
-
-          -- Superfícies
-          surface2 = "#585b70",
-          surface1 = "#45475a",
-          surface0 = "#45475a",
-
-          -- Overlay
-          overlay2 = "#9399b2",
-          overlay1 = "#7f849c",
-          overlay0 = "#6c7086",
-
-          -- Tons principais
-          red = "#f38b8b",
-          green = "#a6e3a1",
-          yellow = "#f9e2af",
-          blue = "#89bafa",
-          magenta = "#cba6f7",
-          teal = "#94e2d5",
-          sky = "#89dceb",
-
-          -- Substituindo rosas por laranjas
-          rosewater = "#fab387",
-          flamingo = "#f9b26b",
-          pink = "#f38e7d",
-          peach = "#fab387",
-          maroon = "#e78a4e",
-          mauve = "#dd835e",
-        },
+        mocha = duckyiced,
       },
       integrations = {
         aerial = true,
@@ -94,17 +60,6 @@ return {
         which_key = true,
       },
     },
-    -- specs = {
-    --   {
-    --     "akinsho/bufferline.nvim",
-    --     init = function()
-    --       local bufline = require("catppuccin.groups.integrations.bufferline")
-    --       function bufline.get()
-    --         return bufline.get_theme()
-    --       end
-    --     end,
-    --   },
-    -- },
   },
 
   -- Tokyonight
