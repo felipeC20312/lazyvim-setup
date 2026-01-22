@@ -11,12 +11,16 @@ return {
       kts = { glyph = "", hl = "MiniIconsKotlin" },
     },
     file = {
+      [".go-version"] = { glyph = "", hl = "MiniIconsBlue" },
       [".gitignore"] = { glyph = "󰊢", hl = "MiniIconsGit" },
       [".gitattributes"] = { glyph = "󰊢", hl = "MiniIconsGit" },
       ["package.json"] = { glyph = "󰎙", hl = "MiniIconsJson" },
       ["tsconfig.json"] = { glyph = "󰘦", hl = "MiniIconsJson" },
       ["gradlew"] = { glyph = "", hl = "MiniIconsGradle" },
       ["gradlew.bat"] = { glyph = "", hl = "MiniIconsGradleBat" },
+    },
+    filetype = {
+      gotmpl = { glyph = "󰟓", hl = "MiniIconsGrey" },
     },
     directory = {
       app = { glyph = "󰉋", hl = "MiniIconsApp" },
