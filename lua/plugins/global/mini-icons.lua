@@ -9,6 +9,9 @@ return {
       json = { glyph = "󰘦", hl = "dkyYellow" },
       kt = { glyph = "", hl = "dkyPurpleDeep" },
       kts = { glyph = "", hl = "dkyPurple" },
+      go = { glyph = "", hl = "dkyBlue" },
+      rs = { glyph = "", hl = "dkyOrange" },
+      exe = { glyph = "", hl = "dkyGreen" },
     },
     file = {
       [".gitignore"] = { glyph = "󰊢", hl = "dkyOrange" },
@@ -21,6 +24,9 @@ return {
     },
     filetype = {
       gotmpl = { glyph = "󰟓", hl = "dkyCian" },
+      sh = { glyph = "", hl = "dkyGreen" },
+      bash = { glyph = "", hl = "dkyGreen" },
+      zsh = { glyph = "", hl = "dkyGreen" },
     },
     directory = {
       app = { glyph = "󰉋", hl = "dkyRed" },
