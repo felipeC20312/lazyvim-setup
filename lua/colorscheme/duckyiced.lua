@@ -15,6 +15,6 @@ return {
   flamingo = "#B7A7FF",
   pink = "#8C7CFF",
   peach = "#E4E8FF",
-  maroon = "#4F468A",
+  maroon = "#83A9F4",
   mauve = "#9B8FCC",
 }
