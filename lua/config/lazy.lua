@@ -19,6 +19,7 @@ require("lazy").setup({
   spec = {
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     { import = "plugins.go" },
+    { import = "plugins.vue" },
     { import = "plugins.java" },
     { import = "plugins.dart" },
     { import = "plugins.global" },

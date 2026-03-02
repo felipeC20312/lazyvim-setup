@@ -13,6 +13,7 @@ return {
       angular = { "prettierd", "prettier" },
       htmlangular = { "prettierd", "prettier" },
       kotlin = { "ktlint" },
+      vue = { "prettierd", "prettier" },
     },
     formatters = {
       prettier = {
