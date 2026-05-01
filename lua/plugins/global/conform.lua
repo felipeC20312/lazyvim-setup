@@ -14,6 +14,7 @@ return {
       htmlangular = { "prettierd", "prettier" },
       kotlin = { "ktlint" },
       vue = { "prettierd", "prettier" },
+      dart = { "dart_format" },
     },
     formatters = {
       prettier = {

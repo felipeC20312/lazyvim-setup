@@ -1,6 +1,7 @@
 return {
   "nvim-mini/mini.icons",
   lazy = false,
+  priority = 900,
   opts = {
     extension = {
       md = { glyph = "", hl = "dkyCian" },
@@ -41,19 +42,26 @@ return {
       directory = { glyph = "󰉋", hl = "dkyGray" },
     },
   },
-  init = function()
-    vim.api.nvim_set_hl(0, "dkyRed", { fg = "#f38b8b", bold = true })
-    vim.api.nvim_set_hl(0, "dkyGray", { fg = "#6c7086", bold = true })
-    vim.api.nvim_set_hl(0, "dkyCian", { fg = "#94e2d5", bold = true })
-    vim.api.nvim_set_hl(0, "dkyGreen", { fg = "#BFDA89", bold = true })
-    vim.api.nvim_set_hl(0, "dkyBlue", { fg = "#89bafa", bold = true })
-    vim.api.nvim_set_hl(0, "dkyYellow", { fg = "#f9e2af", bold = true })
-    vim.api.nvim_set_hl(0, "dkyOrange", { fg = "#fab387", bold = true })
-    vim.api.nvim_set_hl(0, "dkyPurple", { fg = "#B7A7FF", bold = true })
-    vim.api.nvim_set_hl(0, "dkyPurpleDeep", { fg = "#8C7CFF", bold = true })
-    vim.api.nvim_set_hl(0, "dkyOrangeDark", { fg = "#f38e7d", bold = true })
-  end,
   config = function(_, opts)
     require("mini.icons").setup(opts)
+
+    local function set_highlihts()
+      vim.api.nvim_set_hl(0, "dkyRed", { fg = "#f38b8b", bold = true })
+      vim.api.nvim_set_hl(0, "dkyGray", { fg = "#6c7086", bold = true })
+      vim.api.nvim_set_hl(0, "dkyCian", { fg = "#94e2d5", bold = true })
+      vim.api.nvim_set_hl(0, "dkyGreen", { fg = "#BFDA89", bold = true })
+      vim.api.nvim_set_hl(0, "dkyBlue", { fg = "#89bafa", bold = true })
+      vim.api.nvim_set_hl(0, "dkyYellow", { fg = "#f9e2af", bold = true })
+      vim.api.nvim_set_hl(0, "dkyOrange", { fg = "#fab387", bold = true })
+      vim.api.nvim_set_hl(0, "dkyPurple", { fg = "#B7A7FF", bold = true })
+      vim.api.nvim_set_hl(0, "dkyPurpleDeep", { fg = "#8C7CFF", bold = true })
+      vim.api.nvim_set_hl(0, "dkyOrangeDark", { fg = "#f38e7d", bold = true })
+    end
+
+    set_highlihts()
+
+    vim.api.nvim_create_autocmd("ColorScheme", {
+      callback = set_highlihts,
+    })
   end,
 }

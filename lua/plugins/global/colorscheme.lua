@@ -1,5 +1,5 @@
 local duckyiced = require("colorscheme.duckyiced")
-local duckysummer = require("colorscheme.duckysummer")
+-- local duckysummer = require("colorscheme.duckysummer")
 
 return {
   -- Catppuccin
@@ -7,17 +7,32 @@ return {
     "catppuccin/nvim",
     lazy = false,
     name = "catppuccin",
-    opts = {
-      flavor = "mocha",
-      -- transparent_background = true,
-      float = {
-        -- transparent = true,
+    priority = 1000,
+    config = function(_, opts)
+      require("catppuccin").setup(opts)
+      vim.cmd.colorscheme("catppuccin")
+    end,
+    opts = function(_, opts)
+      local duckyiced = require("colorscheme.duckyiced")
+
+      -- força flavor
+      opts.flavor = "mocha"
+
+      -- garante override correto (sem perder merge anterior)
+      opts.color_overrides = opts.color_overrides or {}
+      opts.color_overrides.mocha = duckyiced
+
+      -- 👇 aqui está o ponto do seu problema
+      opts.compile = {
+        enabled = false,
+      }
+
+      -- mantém sua config existente sem perder nada
+      opts.float = vim.tbl_deep_extend("force", opts.float or {}, {
         solid = false,
-      },
-      color_overrides = {
-        mocha = duckyiced,
-      },
-      integrations = {
+      })
+
+      opts.integrations = vim.tbl_deep_extend("force", opts.integrations or {}, {
         aerial = true,
         alpha = true,
         cmp = true,
@@ -58,8 +73,10 @@ return {
         treesitter = true,
         treesitter_context = true,
         which_key = true,
-      },
-    },
+      })
+
+      return opts
+    end,
   },
 
   -- Tokyonight
@@ -85,10 +102,10 @@ return {
   },
 
   -- Theme Setup
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
-    },
-  },
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = "catppuccin",
+  --   },
+  -- },
 }

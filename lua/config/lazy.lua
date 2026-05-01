@@ -21,16 +21,16 @@ require("lazy").setup({
     { import = "plugins.go" },
     { import = "plugins.vue" },
     { import = "plugins.java" },
-    { import = "plugins.dart" },
     { import = "plugins.global" },
     { import = "plugins.kotlin" },
+    { import = "plugins.flutter" },
     { import = "plugins.angular" },
   },
   defaults = {
     lazy = false,
     version = false,
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
+  --install = { colorscheme = { "tokyonight", "habamax" } },
   checker = {
     enabled = true,
     notify = false,
