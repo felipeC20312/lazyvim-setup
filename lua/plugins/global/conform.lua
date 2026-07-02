@@ -2,19 +2,20 @@ return {
   "stevearc/conform.nvim",
   opts = {
     formatters_by_ft = {
-      json = { "prettierd", "prettier" },
-      javascript = { "prettierd", "prettier" },
-      javascriptreact = { "prettierd", "prettier" },
-      typescript = { "prettierd", "prettier" },
-      typescriptreact = { "prettierd ", "prettier" },
+      kotlin = { "ktlint" },
+      dart = { "dart_format" },
+      php = { "php_cs_fixer" },
       css = { "prettierd", "prettier" },
+      vue = { "prettierd", "prettier" },
+      json = { "prettierd", "prettier" },
       html = { "prettierd", "prettier" },
       scss = { "prettierd", "prettier" },
       angular = { "prettierd", "prettier" },
+      javascript = { "prettierd", "prettier" },
+      typescript = { "prettierd", "prettier" },
       htmlangular = { "prettierd", "prettier" },
-      kotlin = { "ktlint" },
-      vue = { "prettierd", "prettier" },
-      dart = { "dart_format" },
+      javascriptreact = { "prettierd", "prettier" },
+      typescriptreact = { "prettierd ", "prettier" },
     },
     formatters = {
       prettier = {

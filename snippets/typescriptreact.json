@@ -34,6 +34,20 @@
     ],
     "description": "description for conpcss"
   },
+  "compntv": {
+    "prefix": "compntv",
+    "body": [
+      "import { Text } from 'react-native';",
+      " ",
+      "export default function ${1:name}() {",
+      " return (",
+      "  <>",
+      "    <Text>${1:name}</Text>",
+      "  </>",
+      " );",
+      "}"
+    ]
+  },
   "hook": {
     "prefix": "usehook",
     "body": [
