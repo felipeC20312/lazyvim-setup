@@ -4,7 +4,8 @@ return {
     formatters_by_ft = {
       kotlin = { "ktlint" },
       dart = { "dart_format" },
-      php = { "php_cs_fixer" },
+      php = { "pint" },
+      blade = { "blade-formatter" },
       css = { "prettierd", "prettier" },
       vue = { "prettierd", "prettier" },
       json = { "prettierd", "prettier" },
@@ -21,6 +22,12 @@ return {
       prettier = {
         command = vim.fn.stdpath("data") .. "/mason/bin/prettierd",
         args = { "--stdin-filepath", "$FILENAME" },
+      },
+
+      pint = {
+        command = function()
+          return vim.fn.filereadable("vendor/bin/pint") == 1 and "vendor/bin/pint" or "pint"
+        end,
       },
     },
   },
