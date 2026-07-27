@@ -1,8 +1,8 @@
 return {
   "lukas-reineke/virt-column.nvim",
   opts = {
-    char = { "┆", "┆", "┆" },
-    virtcolumn = "80, 120, 180",
-    highlight = { "NonText", "NonText" },
+    char = { "┊", "┆", "╎", "│" },
+    virtcolumn = "80, 120, 160, 180",
+    highlight = { "NonText", "NonText", "NonText", "NonText" },
   },
 }

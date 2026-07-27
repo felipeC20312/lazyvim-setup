@@ -1,5 +1,5 @@
-local duckyiced = require("colorscheme.duckyiced")
--- local duckysummer = require("colorscheme.duckysummer")
+-- local duckyiced = require("colorscheme.duckyiced")
+local duckysummer = require("colorscheme.duckysummer")
 
 return {
   -- Catppuccin
@@ -13,21 +13,15 @@ return {
       vim.cmd.colorscheme("catppuccin")
     end,
     opts = function(_, opts)
-      local duckyiced = require("colorscheme.duckyiced")
-
-      -- força flavor
       opts.flavor = "mocha"
 
-      -- garante override correto (sem perder merge anterior)
       opts.color_overrides = opts.color_overrides or {}
-      opts.color_overrides.mocha = duckyiced
+      opts.color_overrides.mocha = duckysummer
 
-      -- 👇 aqui está o ponto do seu problema
       opts.compile = {
         enabled = false,
       }
 
-      -- mantém sua config existente sem perder nada
       opts.float = vim.tbl_deep_extend("force", opts.float or {}, {
         solid = false,
       })
