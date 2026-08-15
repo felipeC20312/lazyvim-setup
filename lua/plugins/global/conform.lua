@@ -2,9 +2,9 @@ return {
   "stevearc/conform.nvim",
   opts = {
     formatters_by_ft = {
-      php = { "pint" },
       luau = { "stylua" },
       kotlin = { "ktlint" },
+      php = { "php-cs-fixer" },
       dart = { "dart_format" },
       blade = { "blade-formatter" },
       css = { "prettierd", "prettier" },

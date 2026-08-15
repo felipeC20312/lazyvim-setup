@@ -21,6 +21,7 @@ require("lazy").setup({
     { import = "plugins.go" },
     { import = "plugins.php" },
     { import = "plugins.vue" },
+    { import = "plugins.temp" },
     { import = "plugins.luau" },
     { import = "plugins.java" },
     { import = "plugins.global" },
