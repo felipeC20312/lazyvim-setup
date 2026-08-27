@@ -35,6 +35,7 @@ return {
 
         custom = {},
       },
+
       code = {
         enabled = true,
         render_modes = false,
@@ -46,7 +47,7 @@ return {
         language_name = true,
         language_info = true,
         language_pad = 0,
-        disable_background = { "diff" },
+        disable_background = { "diff", "javascriptreact", "typescriptreact", "jsx", "tsx" },
         width = "block",
         left_margin = 0,
         left_pad = 2,
@@ -69,6 +70,10 @@ return {
         highlight_fallback = "RenderMarkdownCodeFallback",
         highlight_inline = "RenderMarkdownCodeInline",
         style = "full",
+      },
+
+      anti_conceal = {
+        enabled = false, -- Evita retrabalho de renderização que força validações agressivas
       },
     },
   },

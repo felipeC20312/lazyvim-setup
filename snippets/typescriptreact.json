@@ -1,6 +1,6 @@
 {
-  "conp": {
-    "prefix": "conp",
+  "comp": {
+    "prefix": "comp",
     "body": [
       "export const ${1:name} = ($2) => {",
       "  return (",
@@ -8,10 +8,11 @@
       "  )",
       "}"
     ],
-    "description": "description for conp"
+    "description": "description for comp"
   },
-  "conpfun": {
-    "prefix": "conpfun",
+
+  "compfun": {
+    "prefix": "compfun",
     "body": [
       "export default function ${1:name}($2){",
       "  return (",
@@ -19,10 +20,11 @@
       "  )",
       "}"
     ],
-    "description": "description for conpfun"
+    "description": "description for compfun"
   },
-  "conpcss": {
-    "prefix": "conpcss",
+
+  "compcss": {
+    "prefix": "compcss",
     "body": [
       "import styles from './${TM_FILENAME_BASE}.module.css';",
       "const ${1:name} = ($2) => {",
@@ -32,22 +34,53 @@
       "}",
       "export default ${1:name};"
     ],
-    "description": "description for conpcss"
+    "description": "description for compcss"
   },
+
   "compntv": {
     "prefix": "compntv",
     "body": [
-      "import { Text } from 'react-native';",
-      " ",
-      "export default function ${1:name}() {",
-      " return (",
-      "  <>",
-      "    <Text>${1:name}</Text>",
-      "  </>",
-      " );",
-      "}"
-    ]
+      "import React, { useState, useEffect, useCallback, useMemo } from 'react';",
+      "import { StyleSheet, Text, View } from 'react-native';",
+      "",
+      "// -- TYPES & INTERFACES --",
+      "interface ${1:ComponentName}Props {}",
+      "",
+      "export default function ${1:ComponentName}({}: ${1:ComponentName}Props) {",
+      "  // -- STATE & REFS --",
+      "  const [isLoading, setIsLoading] = useState<boolean>(false);",
+      "",
+      "  // -- MEMOS & CALLBACKS --",
+      "  const ${3:memoizedValue} = useMemo(() => {",
+      "    return null;",
+      "  }, []);",
+      "",
+      "  // -- EFFECTS --",
+      "  useEffect(() => {}, []);",
+      "",
+      "  // -- HELPER FUNCTIONS --",
+      "  const ${5:handlePress} = useCallback(() => {}, []);",
+      "",
+      "  // -- MAIN RENDER --",
+      "  return (",
+      "    <View style={styles.container}>",
+      "      <Text>${1:ComponentName}</Text>",
+      "    </View>",
+      "  );",
+      "}",
+      "",
+      "// -- STYLES --",
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "    justifyContent: 'center',",
+      "    alignItems: 'center',",
+      "  },",
+      "});"
+    ],
+    "description": "Create a fully structured React Native component with standard section separators."
   },
+
   "hook": {
     "prefix": "usehook",
     "body": [
@@ -65,18 +98,22 @@
     ],
     "description": "Custom React Hook boilerplate"
   },
+
   "clg": {
     "prefix": "clg",
     "body": "console.log(${1:text})"
   },
+
   "cle": {
     "prefix": "cle",
     "body": "console.error(${1:text})"
   },
+
   "cli": {
     "prefix": "cli",
     "body": "console.info(${1:text})"
   },
+
   "clw": {
     "prefix": "clw",
     "body": "console.warn(${1:text})"

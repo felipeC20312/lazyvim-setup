@@ -4,27 +4,33 @@
     "body": "document.getelementbyid('${1:id}').innerhtml =",
     "description": "get element by id"
   },
+
   "getelementbyclassname": {
     "prefix": "gbname",
     "body": "document.getelementsbyclassname('${1:class}').innerhtml =",
     "description": "get element by class"
   },
+
   "clg": {
     "prefix": "clg",
     "body": "console.log(${1:text})"
   },
+
   "cle": {
     "prefix": "cle",
     "body": "console.error(${1:text})"
   },
+
   "cli": {
     "prefix": "cli",
     "body": "console.info(${1:text})"
   },
+
   "clw": {
     "prefix": "clw",
     "body": "console.warn(${1:text})"
   },
+
   "conp": {
     "prefix": "conp",
     "body": [
@@ -36,6 +42,7 @@
     ],
     "description": "react functional component"
   },
+
   "conpcss": {
     "prefix": "conpcss",
     "body": [
@@ -51,6 +58,7 @@
     ],
     "description": "react functional component with css module"
   },
+
   "hook": {
     "prefix": "usehook",
     "body": [

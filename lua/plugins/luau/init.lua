@@ -13,7 +13,7 @@ return {
           sync = false,
         },
         sourcemap = {
-          enabled = false,
+          enabled = true,
         },
       })
     end,
