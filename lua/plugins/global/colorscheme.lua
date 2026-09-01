@@ -1,5 +1,6 @@
 -- local duckyiced = require("colorscheme.duckyiced")
-local duckysummer = require("colorscheme.duckysummer")
+-- local duckysummer = require("colorscheme.duckysummer")
+local duckydesert = require("colorscheme.duckydesert")
 
 return {
   -- Catppuccin
@@ -16,7 +17,14 @@ return {
       opts.flavor = "mocha"
 
       opts.color_overrides = opts.color_overrides or {}
-      opts.color_overrides.mocha = duckysummer
+      opts.color_overrides.mocha = duckydesert
+
+      opts.custom_highlights = function(colors)
+        return {
+          -- Você pode usar "colors.text", "colors.red" ou qualquer cor da paleta do tema.
+          ["@property"] = { fg = colors.property },
+        }
+      end
 
       opts.compile = {
         enabled = false,
