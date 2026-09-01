@@ -5,7 +5,7 @@ return {
   opts = {
     extension = {
       md = { glyph = "", hl = "dkyCian" },
-      lua = { glyph = "󰢱", hl = "dkyOrange" },
+      lua = { glyph = "󰢱", hl = "dkyBlue" },
       luau = { glyph = "󰢱", hl = "dkyBlueDeep" },
       git = { glyph = "󰊢", hl = "dkyOrangeDeep" },
       json = { glyph = "󰘦", hl = "dkyYellow" },

@@ -9,7 +9,7 @@ return {
   red = "#df9f9f",
   green = "#b8ceb6",
   yellow = "#f2dfb6",
-  blue = "#a8b1cb",
+  blue = "#9eacd5",
   magenta = "#aa9fdf",
   teal = "#a7cfc9",
   sky = "#97d2dd",
