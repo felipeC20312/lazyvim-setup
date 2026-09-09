@@ -1,0 +1,25 @@
+return {
+  {
+    "OXY2DEV/markview.nvim",
+    lazy = false,
+
+    opts = {
+      preview = {
+        icon_provider = "mini",
+      },
+    },
+
+    keys = {
+      {
+        "<leader>mp",
+        "<cmd>Markview toggle<cr>",
+        desc = "Toggle Markview",
+      },
+      {
+        "<leader>mh",
+        "<cmd>Markview hybridToggle<cr>",
+        desc = "Toggle Markview Hybrid",
+      },
+    },
+  },
+}
