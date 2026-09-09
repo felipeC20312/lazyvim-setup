@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Ducky Dark
+  Custom GtkSourceView style scheme for Meld
+
+  Palette inspired by:
+  - LazyVim custom palette
+  - Kitty "Dark Glassy Elegante"
+
+  Dark, low-contrast UI with soft semantic colors.
+-->
+
+<style-scheme id="ducky-dark" _name="Ducky Dark" version="1.0">
+
+<author>Custom</author>
+<_description>Dark theme based on the Ducky / LazyVim / Kitty palette</_description>
+
+  <!-- ============================================================
+       PALETTE
+       ============================================================ -->
+
+  <!-- Backgrounds -->
+
+  <color name="base"       value="#19191C"/>
+  <color name="mantle"     value="#292929"/>
+  <color name="crust"      value="#2C2C2C"/>
+
+  <!-- Foreground -->
+
+  <color name="text"       value="#CDD6F4"/>
+  <color name="subtext"    value="#A6A6B0"/>
+  <color name="muted"      value="#6C7086"/>
+
+  <!-- Semantic colors -->
+
+  <color name="red"        value="#DF9F9F"/>
+  <color name="green"      value="#B8CEB6"/>
+  <color name="yellow"     value="#F2DFB6"/>
+  <color name="blue"       value="#9EACD5"/>
+  <color name="magenta"    value="#AA9FDF"/>
+  <color name="teal"       value="#A7CFC9"/>
+  <color name="sky"        value="#97D2DD"/>
+
+  <!-- Extended palette -->
+
+  <color name="rosewater"  value="#E0B9A1"/>
+  <color name="flamingo"   value="#D9B28B"/>
+  <color name="pink"       value="#DC9F94"/>
+  <color name="peach"      value="#E0B9A1"/>
+  <color name="maroon"     value="#CD9068"/>
+  <color name="mauve"      value="#CE896D"/>
+
+  <!-- Diff-oriented colors -->
+
+  <color name="diff-add"      value="#B8CEB6"/>
+  <color name="diff-remove"   value="#DF9F9F"/>
+  <color name="diff-change"   value="#F2DFB6"/>
+  <color name="diff-info"     value="#9EACD5"/>
+
+  <!-- ============================================================
+       GLOBAL SETTINGS
+       ============================================================ -->
+
+  <style name="text"
+         foreground="text"
+         background="base"/>
+
+  <style name="selection"
+         foreground="base"
+         background="blue"/>
+
+  <style name="cursor"
+         foreground="text"/>
+
+  <style name="current-line"
+         background="mantle"/>
+
+  <style name="line-numbers"
+         foreground="muted"
+         background="mantle"/>
+
+  <style name="background-pattern"
+         background="mantle"/>
+
+  <style name="draw-spaces"
+         foreground="muted"/>
+
+
+  <!-- ============================================================
+       BRACKET MATCHING
+       ============================================================ -->
+
+  <style name="bracket-match"
+         foreground="base"
+         background="teal"
+         bold="true"/>
+
+  <style name="bracket-mismatch"
+         foreground="base"
+         background="red"
+         bold="true"/>
+
+
+  <!-- ============================================================
+       RIGHT MARGIN
+       ============================================================ -->
+
+  <style name="right-margin"
+         foreground="muted"
+         background="base"/>
+
+
+  <!-- ============================================================
+       SEARCH
+       ============================================================ -->
+
+  <style name="search-match"
+         foreground="base"
+         background="yellow"
+         bold="true"/>
+
+
+  <!-- ============================================================
+       COMMENTS
+       ============================================================ -->
+
+  <style name="def:comment"
+         foreground="muted"
+         italic="true"/>
+
+  <style name="def:shebang"
+         foreground="muted"
+         bold="true"/>
+
+  <style name="def:doc-comment-element"
+         foreground="subtext"
+         italic="true"/>
+
+
+  <!-- ============================================================
+       CONSTANTS
+       ============================================================ -->
+
+  <style name="def:constant"
+         foreground="teal"/>
+
+  <style name="def:special-char"
+         foreground="red"/>
+
+
+  <!-- ============================================================
+       FUNCTIONS
+       ============================================================ -->
+
+  <style name="def:function"
+         foreground="blue"/>
+
+
+  <!-- ============================================================
+       IDENTIFIERS
+       ============================================================ -->
+
+  <style name="def:identifier"
+         foreground="text"/>
+
+
+  <!-- ============================================================
+       KEYWORDS
+       ============================================================ -->
+
+  <style name="def:keyword"
+         foreground="mauve"
+         bold="true"/>
+
+
+  <!-- ============================================================
+       STATEMENTS
+       ============================================================ -->
+
+  <style name="def:statement"
+         foreground="pink"/>
+
+
+  <!-- ============================================================
+       TYPES
+       ============================================================ -->
+
+  <style name="def:type"
+         foreground="yellow"/>
+
+
+  <!-- ============================================================
+       MARKUP
+       ============================================================ -->
+
+  <style name="def:emphasis"
+         foreground="peach"
+         italic="true"/>
+
+  <style name="def:strong-emphasis"
+         foreground="yellow"
+         bold="true"/>
+
+  <style name="def:inline-code"
+         foreground="teal"/>
+
+  <style name="def:insertion"
+         foreground="green"
+         underline="single"/>
+
+  <style name="def:deletion"
+         foreground="red"
+         strikethrough="true"/>
+
+  <style name="def:link-text"
+         foreground="blue"/>
+
+  <style name="def:link-symbol"
+         foreground="sky"
+         bold="true"/>
+
+  <style name="def:link-destination"
+         foreground="sky"
+         italic="true"
+         underline="single"/>
+
+  <style name="def:heading"
+         foreground="blue"
+         bold="true"/>
+
+  <style name="def:thematic-break"
+         foreground="muted"/>
+
+  <style name="def:preformatted-section"
+         foreground="teal"/>
+
+  <style name="def:list-marker"
+         foreground="peach"/>
+
+
+  <!-- ============================================================
+       OPERATORS
+       ============================================================ -->
+
+  <style name="def:operator"
+         foreground="sky"/>
+
+
+  <!-- ============================================================
+       OTHER
+       ============================================================ -->
+
+  <style name="def:preprocessor"
+         foreground="mauve"/>
+
+  <style name="def:error"
+         foreground="red"
+         bold="true"/>
+
+  <style name="def:note"
+         foreground="yellow"
+         bold="true"/>
+
+  <style name="def:net-address"
+         foreground="blue"
+         italic="true"
+         underline="single"/>
+
+
+  <!-- ============================================================
+       C OVERRIDES
+       ============================================================ -->
+
+  <style name="c:preprocessor"
+         foreground="mauve"/>
+
+  <style name="c:type-keyword"
+         foreground="yellow"/>
+
+
+  <!-- ============================================================
+       GTK-DOC OVERRIDES
+       ============================================================ -->
+
+  <style name="gtk-doc:type"
+         foreground="yellow"/>
+
+  <style name="gtk-doc:function"
+         foreground="blue"/>
+
+  <style name="gtk-doc:function-name"
+         foreground="blue"
+         bold="true"/>
+
+  <style name="gtk-doc:property-name"
+         foreground="teal"
+         bold="true"/>
+
+  <style name="gtk-doc:signal-name"
+         foreground="magenta"
+         bold="true"/>
+
+  <style name="gtk-doc:parameter"
+         foreground="text"
+         bold="true"/>
+
+  <style name="gtk-doc:constant"
+         foreground="teal"/>
+
+  <style name="gtk-doc:return"
+         foreground="green"
+         bold="true"/>
+
+  <style name="gtk-doc:since"
+         foreground="muted"
+         bold="true"/>
+
+  <style name="gtk-doc:deprecated"
+         foreground="red"
+         bold="true"/>
+
+</style-scheme>

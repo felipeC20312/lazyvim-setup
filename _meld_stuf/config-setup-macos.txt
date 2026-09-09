@@ -1,0 +1,2 @@
+command:
+defaults write org.gnome.Meld "/org/gnome/meld/style-scheme" "my-meld"

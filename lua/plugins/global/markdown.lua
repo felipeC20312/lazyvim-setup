@@ -15,7 +15,7 @@ return {
         sign = true,
         icons = { "󰲠 ", "󰲢 ", "󰲤 ", "󰲦 ", "󰲨 ", "󰲪 " },
         signs = { "" },
-        width = "full",
+        width = "normal",
         backgrounds = {
           "transparent",
           "transparent",
@@ -48,7 +48,7 @@ return {
         language_info = true,
         language_pad = 0,
         disable_background = { "diff", "javascriptreact", "typescriptreact", "jsx", "tsx" },
-        width = "block",
+        width = "normal",
         left_margin = 0,
         left_pad = 2,
         right_pad = 4,
