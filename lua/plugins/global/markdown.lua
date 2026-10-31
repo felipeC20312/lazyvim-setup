@@ -1,5 +1,14 @@
 return {
   {
+    "mfussenegger/nvim-lint",
+    optional = true,
+    opts = {
+      linters_by_ft = {
+        markdown = {}, -- Forces an empty table to silence markdownlint/warnings completely
+      },
+    },
+  },
+  {
     "MeanderingProgrammer/render-markdown.nvim",
     ft = { "markdown" },
 

@@ -5,15 +5,22 @@ return {
     dependencies = {
       {
         "mason-org/mason.nvim",
-        opts = { ensure_installed = { "php-debug-adapter" } },
+        opts = function(_, opts)
+          opts.ensure_installed = opts.ensure_installed or {}
+          if not vim.tbl_contains(opts.ensure_installed, "php-debug-adapter") then
+            table.insert(opts.ensure_installed, "php-debug-adapter")
+          end
+        end,
       },
     },
-    config = function()
+    opts = function()
       local dap = require("dap")
+
       dap.adapters.php = {
         type = "executable",
         command = "php-debug-adapter",
       }
+
       dap.configurations.php = {
         {
           type = "php",

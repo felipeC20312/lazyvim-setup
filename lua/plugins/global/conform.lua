@@ -2,10 +2,13 @@ return {
   "stevearc/conform.nvim",
   opts = {
     formatters_by_ft = {
+      lua = { "stylua" },
       luau = { "stylua" },
+      ruby = { "rubocop" },
       kotlin = { "ktlint" },
-      php = { "php-cs-fixer" },
+      php = { "php_cs_fixer" },
       dart = { "dart_format" },
+      eruby = { "erb_format" },
       blade = { "blade-formatter" },
       css = { "prettierd", "prettier" },
       vue = { "prettierd", "prettier" },
@@ -17,14 +20,13 @@ return {
       typescript = { "prettierd", "prettier" },
       htmlangular = { "prettierd", "prettier" },
       javascriptreact = { "prettierd", "prettier" },
-      typescriptreact = { "prettierd ", "prettier" },
+      typescriptreact = { "prettierd", "prettier" },
     },
     formatters = {
       prettier = {
         command = vim.fn.stdpath("data") .. "/mason/bin/prettierd",
         args = { "--stdin-filepath", "$FILENAME" },
       },
-
       pint = {
         command = function()
           return vim.fn.filereadable("vendor/bin/pint") == 1 and "vendor/bin/pint" or "pint"

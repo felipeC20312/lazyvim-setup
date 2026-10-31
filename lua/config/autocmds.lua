@@ -8,3 +8,13 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.textwidth = 180
   end,
 })
+
+--> Fastlane ruby association
+vim.filetype.add({
+  filename = {
+    ["Appfile"] = "ruby",
+    ["Gemfile"] = "ruby",
+    ["Fastfile"] = "ruby",
+    ["PluginFile"] = "ruby",
+  },
+})
